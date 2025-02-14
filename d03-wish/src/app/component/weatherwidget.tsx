@@ -15,7 +15,7 @@ const WeatherWidget: React.FC = () => {
   const [weather, setWeather] = useState<WeatherData | null>(null);
   const [city, setCity] = useState<string>("Karachi");
 
-  const API_KEY = process.env.NEXT_PUBLIC_WEATHER_API_KEY;
+  // const API_KEY = process.env.NEXT_PUBLIC_WEATHER_API_KEY;
 
   useEffect(() => {
     const fetchWeather = async () => {
