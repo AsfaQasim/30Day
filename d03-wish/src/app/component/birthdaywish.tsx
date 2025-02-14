@@ -29,7 +29,7 @@ export default function BirthdayWish() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.5, duration: 0.8 }}
       >
-        {/* This Day is Very Special Day  9 / March / 2000 */}
+        This Day is Very Special Day  9 / March / 2000
       </motion.h2>
 
       {/* 🎂 Floating Cake */}
