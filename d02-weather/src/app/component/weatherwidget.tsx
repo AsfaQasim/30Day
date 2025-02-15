@@ -15,13 +15,13 @@ const WeatherWidget: React.FC = () => {
   const [weather, setWeather] = useState<WeatherData | null>(null);
   const [city, setCity] = useState<string>("Karachi");
 
-  const API_KEY = process.env.NEXT_PUBLIC_WEATHER_API_KEY; // Use .env.local
+  // const API_KEY = process.env.NEXT_PUBLIC_WEATHER_API_KEY; // Use .env.local
 
   useEffect(() => {
     const fetchWeather = async () => {
       try {
         const response = await fetch(
-          `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${API_KEY}`
+          `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=3181c732432941ab5232504df31a4509`
         );
         const data: WeatherData = await response.json();
         setWeather(data);
