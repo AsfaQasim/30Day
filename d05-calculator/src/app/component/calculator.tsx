@@ -36,6 +36,7 @@ export default function Calculator() {
         <div className="grid grid-cols-4 gap-3">
           {["7", "8", "9", "/", "4", "5", "6", "*", "1", "2", "3", "-", "0", ".", "=", "+"].map((char) => (
             <button
+            
               key={char}
               onClick={() => (char === '=' ? calculateResult() : handleClick(char))}
               className={`p-4 text-xl font-semibold rounded-lg shadow-md transition-all duration-200 
